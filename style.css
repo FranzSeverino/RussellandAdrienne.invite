@@ -1,0 +1,2086 @@
+@font-face {
+    font-family: Main;
+    src: url(SnellRoundhand-BoldScript.ttf);
+}
+@font-face {
+    font-family: font-1;
+    src: url(CinzelDecorative-Regular.ttf);
+}
+@font-face {
+    font-family: font-2;
+    src: url(CormorantGaramond-Bold.ttf);
+}
+
+@font-face {
+    font-family: font-3;
+    src: url(CormorantGaramond-Regular.ttf);
+}
+@font-face {
+    font-family: font-4;
+    src: url(Dream\ Avenue.ttf);
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    background-image: url('bg.png');
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.Header {
+    position: absolute;
+    top: 18%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(249, 243, 236);
+    width: 100%;
+    max-width: 100%;
+    z-index: 1;
+}
+.Header p {
+    font-family: Main;
+    font-size: 1000%;
+    width: 100%;
+    text-align: center; 
+    color: rgb(249, 243, 236);
+    margin-bottom: -10%;
+    margin-left: -5%;
+    max-width: 100%;
+}
+.logo2 {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    z-index: 1;
+}
+.logo2 h1{
+    font-family: font-4;
+    font-size: 330%;
+    color: #e8ded6;
+}
+
+.Date {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+}
+
+.Date h1{
+    font-family: font-4;
+    font-size: 350%;
+    color: #e8ded6;
+}
+
+.Div {
+    position: absolute;
+    top: 45%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    z-index: 1;
+}
+
+img.div {
+    width: 50%;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.custom-section {
+    height: 100%; /* Adjust the height as needed */
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(170,188,199,1) 15%, rgba(170,188,199,1) 85%, rgba(255,255,255,1) 100%);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: black;
+    display: flex;
+    flex-direction: row; /* Updated to display side by side */
+    justify-content: center;
+    align-items: center;
+}
+.custom-section .G-parents{
+    margin-right: 15%;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.custom-section .B-parents{
+    margin-left: 15%;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}   
+.custom-section, .G-parents .P-title,
+.custom-section, .B-parents .P-title {
+    font-family: font-2;
+    font-size: 140%;
+    text-decoration: underline;
+}
+
+.custom-section, .G-parents p,
+.custom-section, .B-parents p{
+    font-family: font-3;
+    font-size: 130%;
+    text-decoration: none;
+}
+
+.Gparents-title {
+    height: 5%; /* Adjust the height as needed */
+    background: rgb(226,222,210);
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(170,188,199,1) 15%, rgba(170,188,199,1) 85%, rgba(255,255,255,1) 100%);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: black;
+    display: flex;
+    flex-direction: row; /* Updated to display side by side */
+    justify-content: center;
+    align-items: center;
+    font-family: font-2;
+    font-size: 220%;
+    text-decoration: underline;
+}     
+.Gparents-title .Gparents .gp-title{
+    padding: 20px;
+    margin-top: 50px;;
+    margin-bottom: 50px;
+}
+.Godparents {
+    height: 100%; /* Adjust the height as needed */
+    background: rgb(226,222,210);
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(170,188,199,1) 15%, rgba(170,188,199,1) 85%, rgba(255,255,255,1) 100%);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: black;
+    display: flex;
+    flex-direction: row; /* Updated to display side by side */
+    justify-content: center;
+    align-items: center;
+}
+.Godparents .Godfathers{
+    margin-right: 15%;
+}
+.Godparents .Godmothers{
+    margin-left: 15%;
+}   
+.Godparents .Godfathers .gf-title,
+.Godparents .Godmothers .gm-title{
+    font-family: font-2;
+    font-size: 150%;
+    text-decoration: underline;
+    padding: 20px;
+    margin-top: 30px;;
+}
+
+.Godparents, .Godfathers li,
+.Godparents, .Godmothers li{
+    font-family: font-3;
+    font-size: 135%;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+.Best-Man {
+    height: 10%; /* Adjust the height as needed */
+    background: rgb(226,222,210);
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(170,188,199,1) 15%, rgba(170,188,199,1) 85%, rgba(255,255,255,1) 100%);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: black;
+    display: flex;
+    flex-direction: row; /* Updated to display side by side */
+    justify-content: center;
+    align-items: center;
+}   
+
+.Best-Man .best{
+    font-family: font-2;
+    font-size: 230%;
+    text-decoration: underline;
+    padding: 20px;
+    margin-top: 50px;;
+}
+
+.Best-Man p{
+    font-family: font-3;
+    font-size: 200%;
+}
+
+.Maid-of-honor {
+    height: 5%; /* Adjust the height as needed */
+    background: rgb(226,222,210);
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(170,188,199,1) 15%, rgba(170,188,199,1) 85%, rgba(255,255,255,1) 100%);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: black;
+    display: flex;
+    flex-direction: row; /* Updated to display side by side */
+    justify-content: center;
+    align-items: center;
+} 
+
+.Maid-of-honor .maid{
+    font-family: font-2;
+    font-size: 230%;
+    text-decoration: underline;
+    padding: 20px;
+    margin-top: 50px;;
+}
+
+.Maid-of-honor p{
+    font-family: font-3;
+    font-size: 200%;
+}
+
+.Role1 {
+    height: 100%; /* Adjust the height as needed */
+    background: rgb(226,222,210);
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(170,188,199,1) 15%, rgba(170,188,199,1) 85%, rgba(255,255,255,1) 100%);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: black;
+    display: flex;
+    flex-direction: row; /* Updated to display side by side */
+    justify-content: center;
+    align-items: center;
+}
+.Role1 .Groomsmen{
+    margin-right: 15%;
+}
+.Role1 .Bridesmaids{
+    margin-left: 15%;
+}  
+
+.Role1 .men-title,
+.Role1 .maid-title{
+    font-family: font-2;
+    font-size: 200%;
+    text-decoration: underline;
+    padding: 20px;
+    margin-top: 50px;;
+}
+.Role1 li{
+    font-family: font-3;
+    font-size: 170%;
+}
+
+.Candles {
+    height: 5%; /* Adjust the height as needed */
+    background: rgb(226,222,210);
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(170,188,199,1) 15%, rgba(170,188,199,1) 85%, rgba(255,255,255,1) 100%);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: black;
+    display: flex;
+    flex-direction: row; /* Updated to display side by side */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} 
+
+.Candles .candles .c-title{
+    font-family: font-2;
+    font-size: 210%;
+    text-decoration: underline;
+    padding: 20px;
+    margin-top: 50px;;
+}
+
+.Candles p{
+    font-family: font-3;
+    font-size: 190%;
+    display: inline-block;
+    margin: 0 100px;
+}
+
+.Veil {
+    height: 5%; /* Adjust the height as needed */
+    background: rgb(226,222,210);
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(170,188,199,1) 15%, rgba(170,188,199,1) 85%, rgba(255,255,255,1) 100%);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: black;
+    display: flex;
+    flex-direction: row; /* Updated to display side by side */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} 
+
+.Veil .veil .v-title{
+    font-family: font-2;
+    font-size: 210%;
+    text-decoration: underline;
+    padding: 20px;
+    margin-top: 50px;;
+}
+
+.Veil p{
+    font-family: font-3;
+    font-size: 190%;
+    display: inline-block;
+    margin: 0 100px;
+}
+
+.Cord {
+    height: 5%; /* Adjust the height as needed */
+    background: rgb(226,222,210);
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(170,188,199,1) 15%, rgba(170,188,199,1) 85%, rgba(255,255,255,1) 100%);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: black;
+    display: flex;
+    flex-direction: row; /* Updated to display side by side */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} 
+
+.Cord .cord .cd-title{
+    font-family: font-2;
+    font-size: 210%;
+    text-decoration: underline;
+    padding: 20px;
+    margin-top: 50px;;
+}
+
+.Cord p{
+    font-family: font-3;
+    font-size: 190%;
+    display: inline-block;
+    margin: 0 100px;
+}
+
+.Role2 {
+    height: 100%; /* Adjust the height as needed */
+    background: rgb(226,222,210);
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(170,188,199,1) 15%, rgba(170,188,199,1) 85%, rgba(255,255,255,1) 100%);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: black;
+    display: flex;
+    flex-direction: row; /* Updated to display side by side */
+    justify-content: center;
+    align-items: center;
+}
+.Role2 .bible{
+    margin-right: 15%;
+}
+.Role2 .ring{
+    margin-left: -2%;
+}
+.Role2 .coin{
+    margin-left: 15%;
+}  
+
+.Role2 .bible .b-title,
+.Role2 .ring .r-title,
+.Role2 .coin .cn-title{
+    font-family: font-2;
+    font-size: 200%;
+    text-decoration: underline;
+    padding: 20px;
+    margin-top: 50px;;
+}
+
+.Role2 p{
+    font-family: font-3;
+    font-size: 180%;
+    text-decoration: none;
+}
+
+.Flower {
+    height: 5%; /* Adjust the height as needed */
+    background: rgb(226,222,210);
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(170,188,199,1) 15%, rgba(170,188,199,1) 85%, rgba(255,255,255,1) 100%);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: black;
+    display: flex;
+    flex-direction: row; /* Updated to display side by side */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+} 
+
+.Flower .flower .f-title{
+    font-family: font-2;
+    font-size: 210%;
+    text-decoration: underline;
+    padding: 20px;
+    margin-top: 50px;;
+}
+
+.Flower p{
+    font-family: font-3;
+    font-size: 190%;
+    display: inline-block;
+    margin: 0 40px;
+    margin-bottom: 50px;
+}
+
+.image-title {
+    width: 20%;
+    margin-top: 3%;
+    margin-left: 40%;
+    margin-bottom: 0%;
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 0%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.image-container .church,
+.image-container .reception {
+    margin: 0 10px;
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.change-icon-button,
+.link-button {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 20px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.change-icon-button img,
+.link-button img {
+    width: 50px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.image-container .icon1,
+.image-container .icon2 {
+    margin: 0 10px;
+    text-align: center;
+    width: 30%;
+}
+
+.Guidelines {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Guidelines .icon3 {
+    text-align: center;
+    margin-top: 5%;
+    width: 25%;
+}
+
+.Ceremony {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Ceremony .icon4 {
+    text-align: center;
+    margin-top: 5%;
+    width: 30%;
+}
+.Memory {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Memory .icon7 {
+    text-align: center;
+    margin-top: 5%;
+    width: 28%;
+}
+.Reminders {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Reminders .icon5 {
+    text-align: center;
+    margin-top: 5%;
+    width: 20%;
+}
+.Reminders h4{
+    margin-bottom: 50px;
+}
+.Snaps {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Snaps .icon9 {
+    text-align: center;
+    margin-top: 5%;
+    width: 28%;
+}
+.Snaps h2{
+    font-family: font-3;
+}
+.Attire {
+    text-align: center;
+}
+
+.Attire .title {
+    margin-top: 3%;
+    width: 13%; 
+}
+
+.Attire .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Attire .text {
+    text-align: left; 
+}
+.Attire .suit {
+    width: 5%;
+    margin-left: 5%; 
+}
+
+.Attire h4 {
+    font-family: font-1;
+    max-width: 100%;
+    margin-bottom: 0; 
+    text-align: center;
+}
+.Attire .Female {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+
+.Attire .female-text {
+    margin: 20px 0; 
+}
+
+.Attire .navy {
+    width: 13%;
+    margin-right: 2%; 
+}
+
+.Attire .palette {
+    width: 7%;
+    margin-left: 2%;
+    margin-bottom: 5%;
+}
+.Attire .female-text h4 {
+    font-family: font-1;
+    max-width: 100%;
+    margin-bottom: 0; 
+}
+.Female .colors{
+    width: 15%;
+}
+.Gift {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Gift .icon6 {
+    text-align: center;
+    margin-top: 5%;
+    width: 18%;
+}
+.image-description{
+    font-family: font-1;
+}
+.image-container .address {
+    font-size: 100%;
+}
+.Guidelines-text{
+    font-family: font-1;
+}
+.banner{
+    margin-bottom: 50px;
+}
+.RSVP{
+    width: 100%;
+}
+.gforms1{
+    width: 50%; 
+    float: left; 
+}
+
+.gforms2 {
+    width: 50%;
+    float: right; 
+}
+.gforms1, .gforms2 {
+    box-sizing: border-box;
+}
+
+.reception h1{
+    padding: 0%;
+    margin-bottom: 10%;
+}
+@media screen and (min-width: 360px) and (max-width: 480px) and (orientation: portrait){ /*phone size view */
+    .Header {
+        position: absolute;
+        top: 25%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: rgb(249, 243, 236);
+        width: 100%;
+        max-width: 100%;
+        z-index: 1;
+    }
+    .Header p {
+        font-family: Main;
+        font-size: 430%;
+        width: 70%;
+        max-width: 100%;
+        text-align: center; 
+        color: rgb(249, 243, 236);
+        margin-bottom: -10%;
+        margin-left: -5%;
+        max-width: 100%;
+    }
+    .logo2 {
+        position: absolute;
+        top: 65%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        width: 100%;
+        z-index: 1;
+    }
+    .logo2 h1{
+        font-family: font-4;
+        font-size: 150%;
+        color: #e8ded6;
+        max-width: 100%;
+        width: 70%;
+    }
+    .Div {
+        position: absolute;
+        top: 58%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        width: 100%;
+        z-index: 1;
+    }
+    
+    img.div {
+        width: 90%;
+        height: auto;
+        max-width: 100%;
+        margin-bottom: 10px;
+        position: absolute;
+    }
+    .Date {
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 1;
+        width: 100%;
+    }
+    
+    .Date h1{
+        font-family: font-4;
+        font-size: 180%;
+        color: #e8ded6;
+    }
+    .image-title {
+        width: 50%;
+        margin-top: 8%;
+        margin-left: 25%;
+        margin-bottom: 0%;
+        text-align: center;
+    }
+    .image-container .image-description {
+        font-size: 60%;
+    }
+    .image-container .address {
+        font-size: 80%;
+    }
+    .image-container .church .icon1 {
+        width: 35%;
+    }
+    .image-container .reception .icon2 {
+    width: 40%;
+    }
+    .image-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 0%;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .image-container .church,
+    .image-container .reception {
+        margin: 0 10px;
+        text-align: center;
+    }
+    
+    .image-container img {
+        max-width: 100%;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+    
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .image-container .church,
+    .image-container .reception {
+        margin: 0;
+    }
+    .custom-section {
+        flex-direction: column;
+    }
+    .custom-section .B-parents {
+        margin: 0; 
+        padding: 20px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .custom-section .G-parents {
+        margin: 0; 
+        padding: 10px;
+        margin-top: 50px;
+        margin-bottom: 0px;
+    }
+    .custom-section, .G-parents .P-title,
+    .custom-section, .B-parents .P-title {
+        font-family: font-2;
+        font-size: 140%;
+        text-decoration: underline;
+    }
+    
+    .custom-section, .G-parents p,
+    .custom-section, .B-parents p{
+        font-family: font-3;
+        font-size: 130%;
+        text-decoration: none;
+    }
+
+    .Gparents-title {
+        flex-direction: column;
+    }
+
+    .Gparents-title .Gparents .gp-title {
+        padding: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .Gparents-title {
+        font-family: font-2;
+        font-size: 190%;
+        text-decoration: underline;
+    }
+    .Godparents {
+        flex-direction: column;
+    }
+    .Godparents .Godfathers,
+    .Godparents .Godmothers {
+        margin: 0%;
+        text-align: center;
+    }
+    .Godparents .Godfathers .gf-title,
+    .Godparents .Godmothers .gm-title{
+        font-size: 140%;
+    }
+    .Godparents .Godfathers ul,
+    .Godparents .Godmothers ul {
+    list-style: none;
+    padding: 0px;
+    text-align: center; 
+}
+    .Godparents .Godfathers li,
+    .Godparents .Godmothers li{
+        font-size: 120%;
+    }
+    .Best-Man .best{
+        font-family: font-2;
+        font-size: 185%;
+        text-decoration: underline;
+        padding: 20px;
+        margin-top: 50px;;
+    }
+    
+    .Best-Man p{
+        font-family: font-3;
+        font-size: 200%;
+    }
+    .Maid-of-honor .maid{
+        font-family: font-2;
+        font-size: 170%;
+        text-decoration: underline;
+        padding: 20px;
+        margin-top: 50px;;
+    }
+    
+    .Maid-of-honor .p{
+        font-family: font-3;
+        font-size: 170%;
+    }
+    .Role1 {
+        flex-direction: column;
+    }
+
+    .Role1 .Groomsmen,
+    .Role1 .Bridesmaids {
+        margin: 0;
+    }
+    .Role1 .Groomsmen ul,
+    .Role1 .Bridesmaids ul{
+        list-style: none;
+        padding: 0px;
+        text-align: center; 
+    }
+    .Candles .candles .c-title{
+        font-family: font-2;
+        font-size: 180%;
+        text-decoration: underline;
+        padding: 0px;
+        margin-top: 3%;
+    }
+    
+    .Candles p{
+        font-family: font-3;
+        font-size: 151%;
+        display: inline-block;
+        flex-direction: column;
+        margin: 0 100px;
+        width: 100;
+        max-width: 100;
+        margin-top: 3%;
+    }
+    .Veil .veil .v-title{
+        font-family: font-2;
+        font-size: 180%;
+        text-decoration: underline;
+        padding: 0px;
+        margin-top: 3%;
+    }
+    
+    .Veil p{
+        font-family: font-3;
+        font-size: 151%;
+        display: inline-block;
+        margin: 0 100px;
+        margin-top: 3%;
+    }
+    .Cord .cord .cd-title{
+        font-family: font-2;
+        font-size: 190%;
+        text-decoration: underline;
+        padding: 0px;
+        margin-top: 3%;
+    }
+    
+    .Cord p{
+        font-family: font-3;
+        font-size: 151%;
+        display: inline-block;
+        width: 100;
+        max-width: 100;
+        margin-top: 3%;
+    }
+    .Role2 {
+        flex-direction: column;
+    }
+
+    .Role2 .bible,
+    .Role2 .ring,
+    .Role2 .coin {
+        margin: 0;
+    }
+    .Role2 .bible .b-title{
+        font-family: font-2;
+        font-size: 170%;
+        text-decoration: underline;
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+    .Role2 .ring .r-title, 
+    .Role2 .coin .cn-title{
+        font-family: font-2;
+        font-size: 170%;
+        text-decoration: underline;
+        padding: 0px;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+    
+    .Role2 p{
+        font-family: font-3;
+        font-size: 150%;
+        text-decoration: none;
+    }
+    .Flower .f-title{
+        font-family: font-2;
+        font-size: 190%;
+        text-decoration: underline;
+        padding: 10px;
+        margin-top: 3%;
+        margin-bottom: 0px;
+    }
+    
+    .Flower p{
+        font-family: font-3;
+        font-size: 160%;
+        display: inline-block;
+        margin: 0 40px;
+        margin-bottom: 20px;
+    }
+    .Guidelines .icon3 {
+        text-align: center;
+        margin-top: 5%;
+        width: 60%;
+    }
+    .Ceremony .icon4 {
+        text-align: center;
+        margin-top: 5%;
+        width: 65%;
+    }
+    .Gift .icon6 {
+        text-align: center;
+        margin-top: 5%;
+        width: 35%;
+    }
+    .Memory .icon7 {
+        text-align: center;
+        margin-top: 5%;
+        width: 65%;
+    }
+    .Reminders .icon5 {
+        text-align: center;
+        margin-top: 5%;
+        width: 40%;
+    }
+
+    .Guidelines-text{
+        font-size: 75%;
+        max-width: 90%;
+    }
+    .Attire {
+        text-align: center;
+    }
+    .Attire .title {
+        width: 28%; 
+    }
+    .Attire .suit {
+        width: 10%;
+        margin-right: 5%;
+    }
+    .Attire h4{
+        font-size: 75%;
+        max-width: 100%;
+        margin-left: 8%;
+    }
+    .Attire .female-text h4 {
+        font-size: 75%;
+        max-width: 100%;
+        margin-left: 0%; 
+    }
+    .Attire .navy {
+        width: 18%;
+        margin-left: 5%; 
+    }
+    .Attire .palette {
+        width: 9%;
+        margin-right: 5%;
+    }
+    .Female .colors{
+        width: 25%;
+    }
+    .Snaps {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .Snaps .icon9 {
+        text-align: center;
+        margin-top: 5%;
+        width: 55%;
+    }
+    .Snaps h2{
+        font-family: font-3;
+    }
+    .gforms1,
+    .gforms2 {
+        width: 100%;
+        float: none;
+    }
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation: portrait){ /* ipad size view */
+    .Header {
+        position: absolute;
+        top: 30%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: rgb(249, 243, 236);
+        width: 100%;
+        max-width: 100%;
+        z-index: 1;
+    }
+    .Header p {
+        font-family: Main;
+        font-size: 800%;
+        width: 70%;
+        max-width: 100%;
+        text-align: center; 
+        color: rgb(249, 243, 236);
+        margin-bottom: -10%;
+        margin-left: -5%;
+        max-width: 100%;
+    }  
+    .logo2 {
+        position: absolute;
+        top: 65%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        width: 100%;
+        z-index: 1;
+    }
+    .logo2 h1{
+        font-family: font-4;
+        font-size: 250%;
+        color: #e8ded6;
+        max-width: 100%;
+        width: 70%;
+    }
+    .Div {
+        position: absolute;
+        top: 55%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        width: 100%;
+        z-index: 1;
+    }
+    
+    img.div {
+        width: 90%;
+        height: auto;
+        max-width: 100%;
+        margin-bottom: 10px;
+        position: absolute;
+    }
+    .Date {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 1;
+        width: 100%;
+    }
+    
+    .Date h1{
+        font-family: font-4;
+        font-size: 230%;
+        color: #e8ded6;
+    }
+    .image-title {
+        width: 30%;
+        margin-top: 8%;
+        margin-left: 35%;
+        margin-bottom: 0%;
+        text-align: center;
+    }
+    .image-container .church .icon1 {
+        width: 40%;
+    }
+    .image-container .reception .icon2 {
+    width: 40%;
+    }
+    .Guidelines .icon3 {
+        text-align: center;
+        margin-top: 5%;
+        width: 35%;
+    }
+    .Ceremony .icon4 {
+        text-align: center;
+        margin-top: 5%;
+        width: 45%;
+    }
+    .Gift .icon6 {
+        text-align: center;
+        margin-top: 5%;
+        width: 25%;
+    }
+    .Memory .icon7 {
+        text-align: center;
+        margin-top: 5%;
+        width: 45%;
+    }
+    .Reminders .icon5 {
+        text-align: center;
+        margin-top: 5%;
+        width: 25%;
+    }
+    .Guidelines-text{
+        font-size: 105%;
+        max-width: 90%;
+    }
+    .custom-section .G-parents{
+        margin-right: 0%;
+        padding: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .custom-section .B-parents{
+        margin-left: 10%;
+        padding: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }  
+    .Godparents .Godfathers{
+        margin-right: 3%;
+    }
+    .Godparents .Godmothers{
+        margin-left: 2%;
+    } 
+    .Role1 .Groomsmen{
+        margin-right: 5%;
+    }
+    .Role1 .Bridesmaids{
+        margin-left: 5%;
+    }  
+    .Role2{
+        align-items: center;
+        width: 98%;
+        max-width: 100%;
+    }
+    .Godparents, .Godfathers li,
+    .Godparents, .Godmothers li{
+    font-family: font-3;
+    font-size: 130%;
+    text-decoration: none;
+}
+.Attire {
+    text-align: center;
+}
+.Attire .title {
+    width: 23%; 
+}
+.Attire .suit {
+    width: 10%;
+    margin-right: 5%;
+}
+.Attire h4{
+    font-size: 105%;
+    max-width: 100%;
+    margin-left: 8%;
+}
+.Attire .female-text h4 {
+    font-size: 105%;
+    max-width: 100%;
+    margin-left: 0%; 
+}
+.Attire .navy {
+    width: 18%;
+    margin-left: 5%; 
+}
+.Attire .palette {
+    width: 9%;
+    margin-right: 5%;
+}
+.Female .colors{
+    width: 30%;
+}
+.Snaps {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Snaps .icon9 {
+    text-align: center;
+    margin-top: 5%;
+    width: 35%;
+}
+.Snaps h2{
+    font-family: font-3;
+}
+}
+@media only screen and (min-device-width : 280px) and (max-device-width : 320px){ /* galaxy fold size folded view */
+    .Header {
+        position: absolute;
+        top: 30%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: rgb(249, 243, 236);
+        width: 100%;
+        max-width: 100%;
+        z-index: 1;
+    }
+    .Header p {
+        font-family: Main;
+        font-size: 350%;
+        width: 90%;
+        max-width: 100%;
+        text-align: center; 
+        color: rgb(249, 243, 236);
+        margin-bottom: -10%;
+        margin-left: -5%;
+        max-width: 100%;
+    }
+    .logo2 {
+        position: absolute;
+        top: 58%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        width: 100%;
+        z-index: 1;
+    }
+    .logo2 h1{
+        font-family: font-4;
+        font-size: 100%;
+        color: #e8ded6;
+        max-width: 100%;
+        width: 70%;
+    }
+    .Div {
+        position: absolute;
+        top: 50%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        width: 100%;
+        z-index: 1;
+    }
+    
+    img.div {
+        width: 90%;
+        height: auto;
+        max-width: 100%;
+        margin-bottom: 10px;
+        position: absolute;
+    }
+    .Date {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 1;
+        width: 100%;
+    }
+    
+    .Date h1{
+        font-family: font-4;
+        font-size: 150%;
+        color: #e8ded6;
+    }
+    .image-title {
+        width: 50%;
+        margin-top: 8%;
+        margin-left: 25%;
+        margin-bottom: 0%;
+        text-align: center;
+    }
+    .image-container .image-description {
+        font-size: 60%;
+    }
+    .image-container .address {
+        font-size: 80%;
+    }
+    .image-container .church .icon1 {
+        width: 35%;
+    }
+    .image-container .reception .icon2 {
+    width: 40%;
+    }
+    .image-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 0%;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .image-container .church,
+    .image-container .reception {
+        margin: 0 10px;
+        text-align: center;
+    }
+    
+    .image-container img {
+        max-width: 100%;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+    
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .image-container .church,
+    .image-container .reception {
+        margin: 0;
+    }
+    .custom-section {
+        flex-direction: column;
+    }
+    .custom-section .B-parents {
+        margin: 0; 
+        padding: 20px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .custom-section .G-parents {
+        margin: 0; 
+        padding: 10px;
+        margin-top: 50px;
+        margin-bottom: 0px;
+    }
+    .custom-section, .G-parents .P-title,
+    .custom-section, .B-parents .P-title {
+        font-family: font-2;
+        font-size: 120%;
+        text-decoration: underline;
+    }
+    
+    .custom-section, .G-parents p,
+    .custom-section, .B-parents p{
+        font-family: font-3;
+        font-size: 115%;
+        text-decoration: none;
+    }
+
+    .Gparents-title {
+        flex-direction: column;
+    }
+
+    .Gparents-title .Gparents .gp-title {
+        padding: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .Gparents-title {
+        font-family: font-2;
+        font-size: 120%;
+        text-decoration: underline;
+    }
+    .Godparents {
+        flex-direction: column;
+    }
+    .Godparents .Godfathers,
+    .Godparents .Godmothers {
+        margin: 0%;
+        text-align: center;
+    }
+    .Godparents .Godfathers .gf-title,
+    .Godparents .Godmothers .gm-title{
+        font-size: 110%;
+    }
+    .Godparents .Godfathers ul,
+    .Godparents .Godmothers ul {
+    list-style: none;
+    padding: 0px;
+    text-align: center; 
+}
+    .Godparents .Godfathers li,
+    .Godparents .Godmothers li{
+        font-size: 100%;
+    }
+    .Best-Man .best{
+        font-family: font-2;
+        font-size: 150%;
+        text-decoration: underline;
+        padding: 20px;
+        margin-top: 50px;;
+    }
+    
+    .Best-Man p{
+        font-family: font-3;
+        font-size: 140%;
+    }
+    .Maid-of-honor .maid{
+        font-family: font-2;
+        font-size: 150%;
+        text-decoration: underline;
+        padding: 20px;
+        margin-top: 50px;;
+    }
+    
+    .Maid-of-honor p{
+        font-family: font-3;
+        font-size: 140%;
+    }
+    .Role1 {
+        flex-direction: column;
+    }
+
+    .Role1 .Groomsmen,
+    .Role1 .Bridesmaids {
+        margin: 0;
+    }
+    .Role1 .Groomsmen ul,
+    .Role1 .Bridesmaids ul{
+        list-style: none;
+        padding: 0px;
+        text-align: center; 
+    }
+    .Role1 .Groomsmen h2,
+    .Role1 .Bridesmaids h2{
+        font-size: 150%;
+    }
+    .Role1 .Groomsmen li,
+    .Role1 .Bridesmaids li{
+        font-size: 140%;
+    }
+    .Candles .candles .c-title {
+        font-family: font-2;
+        font-size: 150%;
+        text-decoration: underline;
+        padding: 0px;
+        margin-top: 3%;
+    }
+    
+    .Candles p{
+        font-family: font-3;
+        font-size: 135%;
+        display: inline-block;
+        width: 100%;
+        max-width: 100%;
+        text-align: center; 
+        margin: 0 auto; 
+    }
+    
+    .Veil .veil .v-title {
+        font-family: font-2;
+        font-size: 150%;
+        text-decoration: underline;
+        padding: 0px;
+        margin-top: 3%;
+    }
+    
+    .Veil p {
+        font-family: font-3;
+        font-size: 135%;
+        display: inline-block;
+        width: 100%;
+        max-width: 100%;
+        text-align: center; 
+        margin: 0 auto; 
+    }
+    
+    .Cord .cord .cd-title {
+        font-family: font-2;
+        font-size: 150%;
+        text-decoration: underline;
+        padding: 0px;
+        margin-top: 3%;
+    }
+    
+    .Cord p{
+        font-family: font-3;
+        font-size: 135%;
+        display: inline-block;
+        width: 100%;
+        max-width: 100%;
+        text-align: center; 
+        margin: 0 auto; 
+    }
+    .Role2 {
+        flex-direction: column;
+    }
+
+    .Role2 .bible,
+    .Role2 .ring,
+    .Role2 .coin {
+        margin: 0;
+    }
+    .Role2 .bible .b-title{
+        font-family: font-2;
+        font-size: 150%;
+        text-decoration: underline;
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+    .Role2 .ring .r-title, 
+    .Role2 .coin .cn-title{
+        font-family: font-2;
+        font-size: 150%;
+        text-decoration: underline;
+        padding: 0px;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+    
+    .Role2 p{
+        font-family: font-3;
+        font-size: 135%;
+        text-decoration: none;
+    }
+    .Flower .f-title{
+        font-family: font-2;
+        font-size: 150%;
+        text-decoration: underline;
+        padding: 10px;
+        margin-top: 3%;
+        margin-bottom: 0px;
+    }
+    
+    .Flower p{
+        font-family: font-3;
+        font-size: 130%;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    .Guidelines .icon3 {
+        text-align: center;
+        margin-top: 5%;
+        width: 70%;
+    }
+    .Ceremony .icon4 {
+        text-align: center;
+        margin-top: 5%;
+        width: 70%;
+    }
+    .Gift .icon6 {
+        text-align: center;
+        margin-top: 5%;
+        width: 40%;
+    }
+    .Memory .icon7 {
+        text-align: center;
+        margin-top: 5%;
+        width: 70%;
+    }
+    .Reminders .icon5 {
+        text-align: center;
+        margin-top: 5%;
+        width: 45%;
+    }
+
+    .Guidelines-text{
+        font-size: 75%;
+        max-width: 90%;
+    }
+    .Attire {
+        text-align: center;
+    }
+    .Attire .title {
+        width: 30%; 
+    }
+    .Attire .suit {
+        width: 13%;
+        margin-right: 5%;
+    }
+    .Attire h4{
+        font-size: 75%;
+        max-width: 100%;
+        margin-left: 8%;
+    }
+    .Attire .female-text h4 {
+        font-size: 75%;
+        max-width: 100%;
+        margin-left: 0%; 
+    }
+    .Attire .navy {
+        width: 22%;
+        margin-left: 5%; 
+    }
+    .Attire .palette {
+        width: 12%;
+        margin-right: 5%;
+    }
+    .Female .colors{
+        width: 35%;
+    }
+    .gforms1,
+    .gforms2 {
+        width: 100%;
+        float: none;
+    }
+    .Snaps {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .Snaps .icon9 {
+        text-align: center;
+        margin-top: 5%;
+        width: 55%;
+    }
+    .Snaps h2{
+        font-family: font-3;
+        font-size: 100%;
+    }
+}
+@media only screen and (min-device-width : 481px) and (max-device-width : 1200px) and (orientation: landscape){ /* ipad size view */
+    .Header {
+        position: absolute;
+        top: 18%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: rgb(249, 243, 236);
+        width: 100%;
+        max-width: 100%;
+        z-index: 1;
+    }
+    .Header p {
+        font-family: Main;
+        font-size: 550%;
+        width: 50%;
+        max-width: 100%;
+        text-align: center; 
+        color: rgb(249, 243, 236);
+        margin-bottom: -10%;
+        margin-left: -5%;
+        max-width: 100%;
+    } 
+    .logo2 {
+        position: absolute;
+        top: 68%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        width: 100%;
+        z-index: 1;
+    }
+    .logo2 h1{
+        font-family: font-4;
+        font-size: 200%;
+        color: #e8ded6;
+        max-width: 100%;
+        width: 70%;
+    }
+    .Div {
+        position: absolute;
+        top: 53%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        width: 100%;
+        z-index: 1;
+    }
+    
+    img.div {
+        width: 80%;
+        height: auto;
+        max-width: 100%;
+        margin-bottom: 10px;
+        position: absolute;
+    }
+    .Date {
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 1;
+        width: 100%;
+    }
+    .Date h1{
+        font-family: font-4;
+        font-size: 230%;
+        color: #e8ded6;
+    }
+    .image-container .church h1,
+    .image-container .reception h1{
+        font-size: 150%;
+
+    }
+    .custom-section .G-parents{
+        margin-right: 8%;
+        padding: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .custom-section .B-parents{
+        margin-left: 8%;
+        padding: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }  
+    .Godparents .Godfathers{
+        margin-right: 8%;
+    }
+    .Godparents .Godmothers{
+        margin-left: 8%;
+    }   
+}
+@media screen and (min-width: 650px) and (max-width: 1000px) and (orientation: landscape){ /* Phone size landscape */
+    .Header {
+        position: absolute;
+        top: 15%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: rgb(249, 243, 236);
+        width: 100%;
+        max-width: 100%;
+        z-index: 1;
+    }
+    .Header p {
+        font-family: Main;
+        font-size: 480%;
+        width: 100%;
+        max-width: 100%;
+        text-align: center; 
+        color: rgb(249, 243, 236);
+        margin-bottom: -10%;
+        margin-left: -5%;
+        max-width: 100%;
+    } 
+    .logo2 {
+        position: absolute;
+        top: 65%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        width: 100%;
+        z-index: 1;
+    }
+    .logo2 h1{
+        font-family: font-4;
+        font-size: 180%;
+        color: #e8ded6;
+        max-width: 100%;
+        width: 70%;
+    }
+    .Div {
+        position: absolute;
+        top: 45%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        width: 100%;
+        z-index: 1;
+    }
+    
+    img.div {
+        width: 80%;
+        height: auto;
+        max-width: 100%;
+        margin-bottom: 10px;
+        position: absolute;
+    }
+    .Date {
+        position: absolute;
+        top: 92%;
+        left: 48%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 1;
+        width: 100%;
+    }
+    
+    .Date h1{
+        font-family: font-4;
+        font-size: 180%;
+        color: #e8ded6;
+    }
+    .custom-section .G-parents{
+        margin-right: 5%;
+        padding: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .custom-section .B-parents{
+        margin-left: 5%;
+        padding: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }  
+    .Godparents .Godfathers{
+        margin-right: 10%;
+    }
+    .Godparents .Godmothers{
+        margin-left: 10%;
+    }  
+    .Role1 .Bridesmaids{
+        margin-left: 2%;
+    }
+    .Role1 .Groomsmen{
+        margin-left: 2%;
+    }
+    .Guidelines-text{
+        max-width: 100%;
+        width: 95%;
+    }
+    .custom-section, .G-parents .P-title,
+    .custom-section, .B-parents .P-title {
+        font-family: font-2;
+        font-size: 150%;
+        text-decoration: underline;
+    }
+    
+    .custom-section, .G-parents p,
+    .custom-section, .B-parents p{
+        font-family: font-3;
+        font-size: 130%;
+        text-decoration: none;
+    }
+    .Godparents .Godfathers,
+    .Godparents .Godmothers {
+        margin: 0%;
+        text-align: center;
+    }
+    .Godparents .Godfathers .gf-title,
+    .Godparents .Godmothers .gm-title{
+        font-size: 130%;
+    }
+    .Godparents .Godfathers li,
+    .Godparents .Godmothers li{
+        font-size: 100%;
+    }
+    .Best-Man .best{
+        font-family: font-2;
+        font-size: 170%;
+        text-decoration: underline;
+        padding: 20px;
+        margin-top: 50px;;
+    }
+    
+    .Best-Man p{
+        font-family: font-3;
+        font-size: 170%;
+    }
+    .Maid-of-honor .maid{
+        font-family: font-2;
+        font-size: 170%;
+        text-decoration: underline;
+        padding: 20px;
+        margin-top: 50px;;
+    }
+    
+    .Maid-of-honor p{
+        font-family: font-3;
+        font-size: 170%;
+    }
+    .Role1 .Groomsmen,
+    .Role1 .Bridesmaids {
+        margin: 0;
+    }
+    .Candles .candles .c-title{
+        font-family: font-2;
+        font-size: 170%;
+        text-decoration: underline;
+        padding: 0px;
+        margin-top: 3%;
+    }
+    
+    .Candles p{
+        font-family: font-3;
+        font-size: 170%;
+        display: inline-block;
+        flex-direction: column;
+        margin: 0 100px;
+        width: 100;
+        max-width: 100;
+        margin-top: 0%;
+    }
+    .Veil .veil .v-title{
+        font-family: font-2;
+        font-size: 170%;
+        text-decoration: underline;
+        padding: 0px;
+        margin-top: 3%;
+    }
+    
+    .Veil p{
+        font-family: font-3;
+        font-size: 170%;
+        display: inline-block;
+        margin: 0 100px;
+    }
+    .Cord .cord .cd-title{
+        font-family: font-2;
+        font-size: 170%;
+        text-decoration: underline;
+        padding: 0px;
+        margin-top: 3%;
+    }
+    
+    .Cord p{
+        font-family: font-3;
+        font-size: 170%;
+        display: inline-block;
+        width: 100;
+        max-width: 100;
+    }
+    .Role2 .bible .b-title{
+        font-family: font-2;
+        font-size: 150%;
+
+    }
+    .Role2 .ring .r-title{
+        max-width: 100%;
+        width: 80%;
+        font-size: 150%;
+    } 
+    .Role2 .coin .cn-title{
+        font-family: font-2;
+        font-size: 150%;
+        text-decoration: underline;
+    }
+    
+    .Role2 p{
+        font-family: font-3;
+        font-size: 150%;
+        text-decoration: none;
+        max-width: 100%;
+        width: 90%;
+    }
+    .Flower .f-title{
+        font-family: font-2;
+        font-size: 150%;
+        text-decoration: underline;
+        padding: 10px;
+        margin-top: 3%;
+        margin-bottom: 0px;
+    }
+    
+    .Flower p{
+        font-family: font-3;
+        font-size: 150%;
+        display: inline-block;
+        margin: 0 40px;
+        margin-bottom: 20px;
+    }
+    .Guidelines .icon3 {
+        text-align: center;
+        margin-top: 5%;
+        width: 40%;
+    }
+    .Ceremony .icon4 {
+        text-align: center;
+        margin-top: 5%;
+        width: 45%;
+    }
+    .Gift .icon6 {
+        text-align: center;
+        margin-top: 5%;
+        width: 25%;
+    }
+    .Memory .icon7 {
+        text-align: center;
+        margin-top: 5%;
+        width: 45%;
+    }
+    .Reminders .icon5 {
+        text-align: center;
+        margin-top: 5%;
+        width: 25%;
+    }
+    .Attire .title {
+        width: 20%; 
+    }
+    .image-container .church h1, 
+    .image-container .reception h1{
+        font-size: 135%;
+    }
+    .image-container .address{
+        font-size: 85%;
+    }
+}
